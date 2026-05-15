@@ -1,53 +1,77 @@
 # Pregled hardvera
 
-Hardver Strujomerko uređaja je organizovan oko ESP32-C6 mikrokontrolera, ATM90E26 mernog kola, GSM/GPRS modema, lokalnog LCD prikaza, RTC kola, tamper ulaza i power-fail zaštite.
+## Opis
 
-## Glavne komponente
+Za potrebe merenja struje na sistemu se nalazi čip ATM90E26, proizvođača Microchip koji:
 
-| Komponenta | Uloga |
-| --- | --- |
-| ESP32-C6 | Glavni mikrokontroler, FreeRTOS aplikacija, Wi-Fi, Matter, NVS/SPIFFS, USB fabrički interfejs. |
-| ATM90E26 | Merni IC za napon, struju, frekvenciju, aktivnu snagu i energiju. |
-| Quectel M65 | GSM/GPRS modem za uplink komunikaciju ka backend sistemu. |
-| LCD 2x16 preko I2C | Lokalni prikaz merenja, statusa, alarma i servisnog režima. |
-| RTC DS1307 | Lokalno vreme za tarife kada mrežna sinhronizacija nije dostupna. |
-| Tamper prekidač | Detekcija otvaranja kućišta ili neovlašćenog pristupa. |
-| Power-fail signal | Detekcija gubitka glavnog napajanja. |
-| Superkondenzator | Kratko rezervno napajanje za hitno čuvanje stanja. |
+- zadovoljava IEC62052-11, IEC62053-21 i IEC62053-23 standard
 
-## Hardverski blokovi
+- ima preciznost od 0.1% za merenje aktivne energije na dinamičnom opsegu 5000:1
 
-| Blok | Namena |
-| --- | --- |
-| Merni front-end | Prilagođavanje naponskog i strujnog signala za ATM90E26. |
-| Merni procesor | Digitalna obrada električnih veličina i akumulacija energije. |
-| Glavna logika | Firmware, lokalna obrada, komunikacija i skladištenje. |
-| Provajderska veza | GSM/GPRS prenos telemetrije. |
-| Lokalni UI | LCD ekran, taster i osnovne statusne indikacije. |
-| Vreme i tarife | RTC, mrežna sinhronizacija vremena i izbor aktivne tarife. |
-| Zaštita i događaji | Tamper ulaz, power-fail ulaz i hitno čuvanje podataka. |
-| Napajanje | Stabilne naponske grane za logiku, merno kolo i modem. |
+- programibilan
 
-## Merni front-end
+Kako bi omogućili obradu podataka, neometan rad i jednostavan prenos podataka na kompjuter na strujomerku se nalazi mikrokontroler ESP32 C6, proizvođača ESSPRESIF Systems, koji nudi veliku kompjutersku moć. Izabrani mikrokontroler nudi opcije:
 
-ATM90E26 prima naponski i strujni signal preko odgovarajućeg front-end kola. Naponski signal dolazi preko naponskog delitelja, a strujni signal preko strujnog transformatora. Kalibracija se radi kroz merno kolo i firmware sloj kako bi se sirove vrednosti pretvorile u inženjerske jedinice.
+- Matter integracije, koja omogućava Strujomerku da se poveže na Smart Home sistem
 
-## Napajanje i power-fail režim
+- Veliku internu memoriju od 8Mb, koji omogućava logovanje i čuvanje do 30 000 mernih tačaka na lokalu koje se koriste za analizu rada sistema
 
-Uređaj mora stabilno raditi iz glavnog napajanja, ali mora imati i kontrolisano ponašanje pri gubitku napona. Power-fail signal aktivira hitnu putanju u firmware-u, a superkondenzator obezbeđuje kratak vremenski prozor za upis kritičnih podataka u NVS.
+- Jednostavnu kalibraciju mernog čipa
 
-## Tamper zaštita
+- Enkriptovanje i kriptografiju podataka na njemu
 
-Tamper ulaz detektuje otvaranje kućišta. Kada se aktivira, firmware postavlja latched stanje, čuva ga u perzistentnoj memoriji i prikazuje ga kroz lokalni UI, servisni API i telemetriju.
+Kako bi uspostavili komunikaciju sa eksternim serverom, koji se može nalaziti recimo u EPSu, Strujomerko koristi Quectel M65 čip, istoimenog proizvođača koji se koristi u svrhe povezivanja Strujomerka na internet. GSM mreža, koju ovaj čip koristi, standardizovana je i koristi se globalno, korisnik može lako da ubaci SIM karticu čime omogućava razne dodatne beneficije.
 
-## Validacija hardvera
+## Specifikacija
 
-Hardverska validacija treba da obuhvati:
+### Napajanje
 
-- proveru naponskih grana pod opterećenjem,
-- proveru LCD i I2C komunikacije,
-- proveru SPI komunikacije sa ATM90E26,
-- proveru UART komunikacije sa modemom,
-- proveru tamper ulaza,
-- proveru power-fail signala,
-- proveru ponašanja pri kratkotrajnom i potpunom gubitku napajanja.
+Da bismo omogućili neometan potrebno je obezbediti adekvatno napajanje. Strujemerko se napaja sa 7V Vacrms eksternog napajanja gde diodom ispravljamo jednu poluperiodu, filtriramo ulaznim filtrima i posle preko LDO obezbeđujemo 5V DC za potrebe ESP32 (koji upotrebom internog LDO spusta 5V na 3V3 za potrebe ATM90E26) i 4V DC koji su potrebni za rad Quectel M65 čipa. 
+
+S obzirom da ne koristimo Grecov spoj za ispravljanje napona (zbog potencijalnih problema koje mislimo da mogu da se pojave) i niskog AC napona na ulazu, radi neometanog rada potrebno je obezbediti potrebu ulaznu kapacitivnost kako ne bismo imali pad napona koji može da nam remeti rad sistema. Kako su neki početni proračuni koji uzimaju worst case scenario pokazali da nam je potrebna ulazna kapacitivnost od skoro 10mF (Quectel M65, kao najveći potrošač na Strujomerku, na svakih 4.615ms u trajanju od 577us vuče 2A po datasheetu), na ulazu se nalazi 10mF capacitivnost +20% zbog greške računa, nepredviđenih gubitaka i manjak informacija o datom napajanju.
+
+### Power Loss Napajanje
+
+Strujomerko ima mogućnost da prilikom nestanka struje loguje događaj i sačuva podatke u memoriji kako ne bi došlo do gubitka podataka, i kasnije te iste podatke da pošalje na server. To je omogućeno uz pomoć internog superkondezatora kapacitivnosti 1F. 
+
+![](C:\Users\1stef\OneDrive\Desktop\strujemoraci\STRUJOMERKO_OhmSprint2026\hardware\Screenshot%202026-05-15%20145557.png)
+
+Kolo prikazano na slici pokazuje način na koji je superkondenzator povezan u kolu. Prilikom nestanka struje ESP32 nastavlja da se napaja kratko uz pomoć superkondenzatora i preko spoljašnjeg signala registruje nestanak struje te započinje proces čuvanja podataka i slanja informacije o nestanku struje na mrežu.
+
+Strujomerko ima specijalnu logiku koja preko komparatora omogućuje registrovanje nestanka struje.
+
+### Čačkodugmić
+
+Kako bi obezbedili da korisnici ne utiču na podatke ili remete adekvatan rad Strujomerka obezbeđen je Čačkodugmić. Čačkodugmić obezbeđuje da Strujomerko primeti ukoliko neko neovlašćeno pokušava da otvori kutiju strujomera i time potencijalno načini zlodelo protiv krupnog kapitala. Otvaranjem kutije procesor registruje zlodelo i javlja MUP-u (ne bukv).
+
+### Ekran
+
+Ekran predstavlja jednu od tri eksterne komponente na Strujomerku. Ekran prikazuje sve potrebne podatke korisniku i proizvođaču kako bi adekvatno reigstrovali potrošnju. Na ekranu se mogu pronaći redom merenja napona, struje, aktivne energije, tarife, vreme, datum, pristup mreži, greška na Strujomerku i razne druge stvari. Ekran je u LCD tehnologiji i može da prikazuje do 32 karaktera raspoređena u 2 reda. Sa ekranom se komunicira preko I2C komunikacije.
+
+![](C:\Users\1stef\OneDrive\Desktop\strujemoraci\STRUJOMERKO_OhmSprint2026\hardware\Screenshot%202026-05-15%20145944.png)
+
+### RTC kolo
+
+RTC kolo je druga od tri eksterne komponente na Strujomerku. RTC kolo služi kako bismo pravovremeno odragovali na promene u tarifi po kojoj se naplaćuje struja.
+
+![](C:\Users\1stef\OneDrive\Desktop\strujemoraci\STRUJOMERKO_OhmSprint2026\hardware\Screenshot%202026-05-15%20150024.png)
+
+### Merenje Struje
+
+Da bismo izmerili vrednost utrošene struje koristimo eksterni strujni transformator. Potrebe Strujomerka zadovoljava strujni transformator koji ima opseg do 20A. Izabrani strujni transformator unutar sebe ima integrisanu logiku koja mu daje na naponski izlaz. Da bismo očitali naponske vrednosti koristimo filtar:
+
+![](C:\Users\1stef\AppData\Roaming\marktext\images\2026-05-12-01-10-54-image.png)
+
+Otpornici R23, R22 i R21 omogućuju limitiranje i mogu se koristiti kao naponski razdelnik strujnog transformatora. R23 i R22 otpornici se koriste i za potrebe "ukrštanja signala", tj omogućuju nam da ispravimo grešku koja može nastati pogrešnim žičenjem strujnog transformatora. Izlazni napon ulaznog filtera za merenje struje je diferencijalni signal koji ATM90E26 kasnije obrađuje.
+
+<img src="file:///C:/Users/1stef/AppData/Roaming/marktext/images/2026-05-12-01-26-32-image.png" title="" alt="" width="319">
+
+<img src="file:///C:/Users/1stef/AppData/Roaming/marktext/images/2026-05-12-01-27-22-image.png" title="" alt="" width="317">
+
+### Merenje napona
+
+Da bi izračunali aktivnu utrošenu snagu potrebno je znati i koji napon dobija doaćinstvo. Kako je ulazni napon koji merimo na takmičenju ograničen na 7V Vacrms potrebno je isti i skalirati. To se postiže sledećim kolom:
+
+![](C:\Users\1stef\AppData\Roaming\marktext\images\2026-05-12-01-19-44-image.png)
+
+Vidimo da se ulazni napon skalira u odnosu 1:22 i time se dovodi bezbedni diferencijalni napon na ulaze ATM90E26.
