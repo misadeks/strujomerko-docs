@@ -1,0 +1,43 @@
+site_name: Strujomerko dokumentacija
+site_description: Dokumentacija za Strujomerko pametni merač električne energije.
+repo_url: https://github.com/misadeks/strujomerko-docs
+docs_dir: docs
+site_dir: site
+theme:
+  name: readthedocs
+nav:
+  - Početna: index.md
+  - Proizvod:
+      - Pregled proizvoda: proizvod/pregled.md
+      - Podsistemi sistema: proizvod/podsistemi-sistema.md
+      - Specifikacija: proizvod/specifikacija.md
+      - Korisničko uputstvo: proizvod/korisnicko-uputstvo.md
+  - Hardver:
+      - Pregled hardvera: hardver/pregled-hardvera.md
+      - Pinout i komponente: hardver/pinout-i-komponente.md
+  - Softver:
+      - Arhitektura firmware-a: softver/arhitektura-firmware-a.md
+      - Lokalni servisni API: softver/lokalni-servisni-api.md
+      - Skladištenje i NVS: softver/skladistenje-i-nvs.md
+  - Backend:
+      - Pregled backend-a: backend/pregled-backenda.md
+      - Podsistemi: backend/podsistemi.md
+      - API ugovori: backend/api-ugovori.md
+      - Modeli podataka: backend/modeli-podataka.md
+      - Telemetrija i događaji: backend/telemetrija-i-dogadjaji.md
+      - Tarife i obračun: backend/tarife-i-obracun.md
+      - Plan implementacije: backend/plan-implementacije.md
+  - Proizvodnja i validacija:
+      - Bring-up i test plan: proizvodnja-i-validacija/bring-up-i-test-plan.md
+      - Proizvodna konfiguracija: proizvodnja-i-validacija/proizvodna-konfiguracija.md
+      - USB proizvodni provisioning: proizvodnja-i-validacija/usb-provisioning.md
+      - Tehnički priručnik: proizvodnja-i-validacija/tehnicki-prirucnik.md
+  - Reference:
+      - Projektni zadatak: assets/ohmsprint-2026-projektni-zadatak.pdf
+      - Slike i dijagrami: slike/README.md
+markdown_extensions:
+  - admonition
+  - tables
+  - toc:
+      permalink: true
+strict: true
