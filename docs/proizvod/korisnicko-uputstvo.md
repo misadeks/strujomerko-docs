@@ -73,7 +73,7 @@ Tarife zavise od podešavanja koje uređaj dobija od nadležnog sistema. Korisni
 
 ## 7. Povezivanje sa aplikacijom ili pametnom kućom
 
-Strujomerko može podržavati povezivanje sa korisničkom aplikacijom, lokalnim servisnim prikazom ili pametnim kućnim sistemom, u zavisnosti od verzije uređaja i načina instalacije.
+Strujomerko može podržavati povezivanje sa korisničkom aplikacijom ili pametnim kućnim sistemom, u zavisnosti od verzije uređaja i načina instalacije.
 
 Ako je povezivanje dostupno:
 
@@ -84,21 +84,7 @@ Ako je povezivanje dostupno:
 
 Ako povezivanje ne uspe, proverite da li ste blizu uređaja i ponovite postupak. Ako problem ostane, obratite se servisu.
 
-## 8. Servisni režim
-
-Servisni režim je namenjen instalateru ili ovlašćenom servisu. Korisnik ne treba da menja servisna podešavanja bez uputstva dobavljača ili servisera.
-
-Servisni režim se koristi za:
-
-- proveru rada uređaja,
-- pregled statusa,
-- podešavanje povezivanja,
-- servisnu dijagnostiku,
-- brisanje određenih alarma nakon provere.
-
-Ako vam je servis tražio da uključite servisni režim, pratite isključivo njihovo uputstvo.
-
-## 9. Alarm otvaranja kućišta
+## 8. Alarm otvaranja kućišta
 
 Uređaj može registrovati pokušaj otvaranja kućišta ili promenu zaštitnog prekidača. Tada se može pojaviti alarm.
 
@@ -111,13 +97,13 @@ Ako se pojavi ovakav alarm:
 
 Alarm može ostati zapamćen i nakon ponovnog uključivanja uređaja.
 
-## 10. Nestanak napajanja
+## 9. Nestanak napajanja
 
 Pri nestanku napajanja uređaj pokušava da sačuva poslednje stanje. Kada se napajanje vrati, uređaj nastavlja rad i prikazuje dostupne podatke.
 
 Ako nakon povratka napajanja uređaj prikazuje grešku ili se ne uključuje, obratite se servisu.
 
-## 11. Poruke o grešci
+## 10. Poruke o grešci
 
 Uređaj može prikazati poruku o grešci merenja, povezivanja, alarma ili internog stanja.
 
@@ -128,7 +114,7 @@ Kada se pojavi greška:
 3. Ne otvarajte uređaj.
 4. Obratite se servisu ako greška ostane prikazana.
 
-## 12. Kada pozvati servis
+## 11. Kada pozvati servis
 
 Pozovite servis ako:
 
@@ -141,7 +127,7 @@ Pozovite servis ako:
 - kućište je oštećeno,
 - uređaj je bio izložen vodi, vlazi ili udaru.
 
-## 13. Održavanje
+## 12. Održavanje
 
 Korisnik ne treba da održava unutrašnje delove uređaja.
 
@@ -153,16 +139,15 @@ Dozvoljeno je:
 
 Ne koristiti vodu, hemikalije, rastvarače ili abrazivna sredstva.
 
-## 14. Privatnost
+## 13. Privatnost
 
 Uređaj može slati podatke o potrošnji i statusu nadležnom sistemu ili aplikaciji, u zavisnosti od načina instalacije. Ti podaci se koriste za prikaz potrošnje, dijagnostiku i obradu koju obezbeđuje dobavljač usluge.
 
 Za informacije o obradi podataka, korisnik treba da se obrati dobavljaču ili administratoru sistema.
 
-## 15. Kratki podsetnik
+## 14. Kratki podsetnik
 
 - Kratak pritisak menja prikaz.
 - Dug pritisak prikazuje dodatnu informaciju ili pokreće dostupnu akciju.
 - Ne otvarajte uređaj.
 - Alarm ili stalnu grešku prijavite servisu.
-- Servisna podešavanja menjajte samo uz uputstvo ovlašćenog lica.
