@@ -60,18 +60,20 @@ RTC kolo je druga od tri eksterne komponente na Strujomerku. RTC kolo služi kak
 
 Da bismo izmerili vrednost utrošene struje koristimo eksterni strujni transformator. Potrebe Strujomerka zadovoljava strujni transformator koji ima opseg do 20A. Izabrani strujni transformator unutar sebe ima integrisanu logiku koja mu daje na naponski izlaz. Da bismo očitali naponske vrednosti koristimo filtar:
 
-![](C:\Users\1stef\AppData\Roaming\marktext\images\2026-05-12-01-10-54-image.png)
+![Screenshot 2026-05-15 152856.png](C:\Users\1stef\OneDrive\Desktop\strujemoraci\STRUJOMERKO_OhmSprint2026\hardware\Screenshot%202026-05-15%20152856.png)
 
 Otpornici R23, R22 i R21 omogućuju limitiranje i mogu se koristiti kao naponski razdelnik strujnog transformatora. R23 i R22 otpornici se koriste i za potrebe "ukrštanja signala", tj omogućuju nam da ispravimo grešku koja može nastati pogrešnim žičenjem strujnog transformatora. Izlazni napon ulaznog filtera za merenje struje je diferencijalni signal koji ATM90E26 kasnije obrađuje.
 
-<img src="file:///C:/Users/1stef/AppData/Roaming/marktext/images/2026-05-12-01-26-32-image.png" title="" alt="" width="319">
+<img src="file:///C:/Users/1stef/OneDrive/Desktop/strujemoraci/STRUJOMERKO_OhmSprint2026/hardware/Screenshot%202026-05-15%20153032.png" title="" alt="Screenshot 2026-05-15 153032.png" width="434">
 
-<img src="file:///C:/Users/1stef/AppData/Roaming/marktext/images/2026-05-12-01-27-22-image.png" title="" alt="" width="317">
+<img src="file:///C:/Users/1stef/OneDrive/Desktop/strujemoraci/STRUJOMERKO_OhmSprint2026/hardware/Screenshot%202026-05-15%20152944.png" title="" alt="Screenshot 2026-05-15 152944.png" width="434">
+
+
 
 ### Merenje napona
 
 Da bi izračunali aktivnu utrošenu snagu potrebno je znati i koji napon dobija doaćinstvo. Kako je ulazni napon koji merimo na takmičenju ograničen na 7V Vacrms potrebno je isti i skalirati. To se postiže sledećim kolom:
 
-![](C:\Users\1stef\AppData\Roaming\marktext\images\2026-05-12-01-19-44-image.png)
+![](C:\Users\1stef\OneDrive\Desktop\strujemoraci\STRUJOMERKO_OhmSprint2026\hardware\Screenshot%202026-05-15%20152908.png)
 
 Vidimo da se ulazni napon skalira u odnosu 1:22 i time se dovodi bezbedni diferencijalni napon na ulaze ATM90E26.
