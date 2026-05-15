@@ -30,6 +30,12 @@ Svi tekstualni dokumenti u ovoj strukturi su na srpskom. Tehnički identifikator
 9. [`Lokalni servisni API`](softver/lokalni-servisni-api.md)
 10. [`Bring-up i test plan`](proizvodnja-i-validacija/bring-up-i-test-plan.md)
 
+## Povezani repozitorijumi
+
+- [EKS Backend](https://github.com/misadeks/eks-backend)
+- [EKS Frontend](https://github.com/misadeks/eks-frontend)
+- [Strujomerko Embedded](https://github.com/misadeks/strujomerko-embedded)
+
 ## Slike
 
 Slike, šeme, dijagrami i screenshot-ovi treba da idu u `docs/slike/`. U dokumentima su već ostavljena mesta za dijagrame backend arhitekture, podsistema, API grupa, modela podataka, telemetrije, obračuna i plana implementacije.

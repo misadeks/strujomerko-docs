@@ -4,6 +4,12 @@ Javni repozitorijum dokumentacije za Strujomerko smart meter platformu.
 
 Dokumentacija: [misadeks.github.io/strujomerko-docs](https://misadeks.github.io/strujomerko-docs/)
 
+## Povezani repozitorijumi
+
+- [EKS Backend](https://github.com/misadeks/eks-backend)
+- [EKS Frontend](https://github.com/misadeks/eks-frontend)
+- [Strujomerko Embedded](https://github.com/misadeks/strujomerko-embedded)
+
 ## Lokalni pregled
 
 ```powershell
