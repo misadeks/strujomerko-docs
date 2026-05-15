@@ -73,7 +73,7 @@ Treba da radi:
 - deduplikaciju ponovljenih paketa,
 - čuvanje sirovog payload-a,
 - normalizaciju merenja,
-- izračunavanje agregata,
+- izračunavanje agregiranih podataka,
 - upis događaja i alarma.
 
 ## 5. Konfiguracija uređaja

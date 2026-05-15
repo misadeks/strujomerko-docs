@@ -1,5 +1,6 @@
 site_name: Strujomerko dokumentacija
 site_description: Dokumentacija za Strujomerko pametni merač električne energije.
+site_url: https://misadeks.github.io/strujomerko-docs/
 repo_url: https://github.com/misadeks/strujomerko-docs
 docs_dir: docs
 site_dir: site
@@ -27,6 +28,12 @@ nav:
       - Telemetrija i događaji: backend/telemetrija-i-dogadjaji.md
       - Tarife i obračun: backend/tarife-i-obracun.md
       - Plan implementacije: backend/plan-implementacije.md
+  - Frontend:
+      - Pregled frontend-a: frontend/pregled-frontenda.md
+      - Arhitektura i rute: frontend/arhitektura-i-rute.md
+      - API, podaci i realtime: frontend/api-podaci-i-realtime.md
+      - Moduli i UI: frontend/moduli-i-ui.md
+      - Razvoj, testiranje i deployment: frontend/razvoj-testiranje-deployment.md
   - Proizvodnja i validacija:
       - Bring-up i test plan: proizvodnja-i-validacija/bring-up-i-test-plan.md
       - Proizvodna konfiguracija: proizvodnja-i-validacija/proizvodna-konfiguracija.md

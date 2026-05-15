@@ -12,6 +12,7 @@ Svi tekstualni dokumenti u ovoj strukturi su na srpskom. Tehnički identifikator
 | [`hardver/`](hardver/pregled-hardvera.md) | Komponente, merni front-end, napajanje, pinout i hardverska validacija. |
 | [`softver/`](softver/arhitektura-firmware-a.md) | Firmware arhitektura uređaja, lokalni API, skladištenje i NVS. |
 | [`backend/`](backend/pregled-backenda.md) | Backend podsistemi, API ugovori, modeli podataka, telemetrija, tarife i plan implementacije. |
+| [`frontend/`](frontend/pregled-frontenda.md) | Frontend aplikacija, rute, API integracija, UI moduli i razvojni standardi. |
 | [`proizvodnja-i-validacija/`](proizvodnja-i-validacija/bring-up-i-test-plan.md) | Proizvodna konfiguracija, USB provisioning, kalibracija i bring-up validacija. |
 | `reference/` | Izvorni projektni zadatak i dodatni referentni materijali. |
 | `slike/` | Slike, dijagrami i screenshot-ovi koji će biti dodati kasnije. |
@@ -25,8 +26,9 @@ Svi tekstualni dokumenti u ovoj strukturi su na srpskom. Tehnički identifikator
 5. [`Arhitektura firmware-a`](softver/arhitektura-firmware-a.md)
 6. [`Pregled backend-a`](backend/pregled-backenda.md)
 7. [`Backend podsistemi`](backend/podsistemi.md)
-8. [`Lokalni servisni API`](softver/lokalni-servisni-api.md)
-9. [`Bring-up i test plan`](proizvodnja-i-validacija/bring-up-i-test-plan.md)
+8. [`Pregled frontend-a`](frontend/pregled-frontenda.md)
+9. [`Lokalni servisni API`](softver/lokalni-servisni-api.md)
+10. [`Bring-up i test plan`](proizvodnja-i-validacija/bring-up-i-test-plan.md)
 
 ## Slike
 

@@ -1,6 +1,6 @@
 # Telemetrija i događaji
 
-Telemetrija je glavni tok podataka od uređaja ka backend-u. Backend mora primiti podatke, proveriti ih, sačuvati sirovi payload, normalizovati korisna polja i proizvesti događaje ili agregate.
+Telemetrija je glavni tok podataka od uređaja ka backend-u. Backend mora primiti podatke, proveriti ih, sačuvati sirovi payload, normalizovati korisna polja i proizvesti događaje ili agregirane podatke.
 
 ## Telemetrijski payload
 
@@ -81,9 +81,9 @@ Tipični događaji:
 - firmware update status,
 - offline buffer flush.
 
-## Agregati
+## Agregirani podaci
 
-Za brz prikaz u portalu backend treba da računa agregate:
+Za brz prikaz u portalu backend treba da računa agregirane podatke:
 
 - potrošnja po satu,
 - potrošnja po danu,
@@ -92,7 +92,7 @@ Za brz prikaz u portalu backend treba da računa agregate:
 - maksimalna snaga po periodu,
 - broj i tipovi događaja.
 
-Agregati se mogu računati background worker-om nakon upisa telemetrije.
+Agregirani podaci se mogu računati background worker-om nakon upisa telemetrije.
 
 ## Mesto za slike
 
