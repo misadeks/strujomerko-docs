@@ -219,12 +219,3 @@ Podržani event listener-i:
 - `alarm.updated`.
 
 Ovo trenutno pripada starijem operations/container sloju. Za nove realtime meter događaje treba definisati novu integraciju u `meter-client.ts` ili jasno migrirati postojeću.
-
-## Mesto za slike
-
-Ovde dodati:
-
-```markdown
-![Frontend API slojevi](../slike/frontend-api-slojevi.png)
-![Frontend cache i realtime tok](../slike/frontend-cache-realtime.png)
-```

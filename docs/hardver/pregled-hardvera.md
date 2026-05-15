@@ -34,7 +34,7 @@ S obzirom da ne koristimo Grecov spoj za ispravljanje napona (zbog potencijalnih
 
 Strujomerko ima mogućnost da prilikom nestanka struje loguje događaj i sačuva podatke u memoriji kako ne bi došlo do gubitka podataka, i kasnije te iste podatke da pošalje na server. To je omogućeno uz pomoć internog superkondezatora kapacitivnosti 1F. 
 
-![](C:\Users\1stef\OneDrive\Desktop\strujemoraci\STRUJOMERKO_OhmSprint2026\hardware\Screenshot%202026-05-15%20145557.png)
+![Power-loss rezerva i superkondenzator](../slike/hardver/hardver-01.png)
 
 Kolo prikazano na slici pokazuje način na koji je superkondenzator povezan u kolu. Prilikom nestanka struje ESP32 nastavlja da se napaja kratko uz pomoć superkondenzatora i preko spoljašnjeg signala registruje nestanak struje te započinje proces čuvanja podataka i slanja informacije o nestanku struje na mrežu.
 
@@ -48,25 +48,25 @@ Kako bi obezbedili da korisnici ne utiču na podatke ili remete adekvatan rad St
 
 Ekran predstavlja jednu od tri eksterne komponente na Strujomerku. Ekran prikazuje sve potrebne podatke korisniku i proizvođaču kako bi adekvatno reigstrovali potrošnju. Na ekranu se mogu pronaći redom merenja napona, struje, aktivne energije, tarife, vreme, datum, pristup mreži, greška na Strujomerku i razne druge stvari. Ekran je u LCD tehnologiji i može da prikazuje do 32 karaktera raspoređena u 2 reda. Sa ekranom se komunicira preko I2C komunikacije.
 
-![](C:\Users\1stef\OneDrive\Desktop\strujemoraci\STRUJOMERKO_OhmSprint2026\hardware\Screenshot%202026-05-15%20145944.png)
+![LCD ekran](../slike/hardver/hardver-02.png)
 
 ### RTC kolo
 
 RTC kolo je druga od tri eksterne komponente na Strujomerku. RTC kolo služi kako bismo pravovremeno odragovali na promene u tarifi po kojoj se naplaćuje struja.
 
-![](C:\Users\1stef\OneDrive\Desktop\strujemoraci\STRUJOMERKO_OhmSprint2026\hardware\Screenshot%202026-05-15%20150024.png)
+![RTC kolo](../slike/hardver/hardver-03.png)
 
 ### Merenje Struje
 
 Da bismo izmerili vrednost utrošene struje koristimo eksterni strujni transformator. Potrebe Strujomerka zadovoljava strujni transformator koji ima opseg do 20A. Izabrani strujni transformator unutar sebe ima integrisanu logiku koja mu daje na naponski izlaz. Da bismo očitali naponske vrednosti koristimo filtar:
 
-![Screenshot 2026-05-15 152856.png](C:\Users\1stef\OneDrive\Desktop\strujemoraci\STRUJOMERKO_OhmSprint2026\hardware\Screenshot%202026-05-15%20152856.png)
+![Ulazni filter za merenje struje](../slike/hardver/hardver-04.png)
 
 Otpornici R23, R22 i R21 omogućuju limitiranje i mogu se koristiti kao naponski razdelnik strujnog transformatora. R23 i R22 otpornici se koriste i za potrebe "ukrštanja signala", tj omogućuju nam da ispravimo grešku koja može nastati pogrešnim žičenjem strujnog transformatora. Izlazni napon ulaznog filtera za merenje struje je diferencijalni signal koji ATM90E26 kasnije obrađuje.
 
-<img src="file:///C:/Users/1stef/OneDrive/Desktop/strujemoraci/STRUJOMERKO_OhmSprint2026/hardware/Screenshot%202026-05-15%20153032.png" title="" alt="Screenshot 2026-05-15 153032.png" width="434">
+![Diferencijalni strujni signal - detalj 1](../slike/hardver/hardver-07.png)
 
-<img src="file:///C:/Users/1stef/OneDrive/Desktop/strujemoraci/STRUJOMERKO_OhmSprint2026/hardware/Screenshot%202026-05-15%20152944.png" title="" alt="Screenshot 2026-05-15 152944.png" width="434">
+![Diferencijalni strujni signal - detalj 2](../slike/hardver/hardver-06.png)
 
 
 
@@ -74,6 +74,6 @@ Otpornici R23, R22 i R21 omogućuju limitiranje i mogu se koristiti kao naponski
 
 Da bi izračunali aktivnu utrošenu snagu potrebno je znati i koji napon dobija doaćinstvo. Kako je ulazni napon koji merimo na takmičenju ograničen na 7V Vacrms potrebno je isti i skalirati. To se postiže sledećim kolom:
 
-![](C:\Users\1stef\OneDrive\Desktop\strujemoraci\STRUJOMERKO_OhmSprint2026\hardware\Screenshot%202026-05-15%20152908.png)
+![Merenje napona](../slike/hardver/hardver-05.png)
 
 Vidimo da se ulazni napon skalira u odnosu 1:22 i time se dovodi bezbedni diferencijalni napon na ulaze ATM90E26.

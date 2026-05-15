@@ -2,6 +2,10 @@
 
 Firmware je organizovan kao skup FreeRTOS servisa koji razmenjuju podatke preko snapshot modela, događaja, namenskih redova i sistemskih event bitova. Cilj arhitekture je da merenje, prikaz, skladištenje, uplink i servisni režim ostanu razdvojeni, ali sinhronizovani.
 
+![Firmware pregled](../slike/firmware/firmware.jpeg)
+
+![Firmware stack dijagram](../slike/firmware/firmware-stack-diagram.png)
+
 ## Model komunikacije
 
 ### Merni snapshot
@@ -63,6 +67,8 @@ Firmware koristi event group bitove za brzu proveru globalnog stanja:
 
 Kada hardver detektuje gubitak glavnog napajanja:
 
+![Otpornost na greške i power-fail tok](../slike/firmware/fault-tolerance.png)
+
 1. GPIO prekid budi `power_guard_task`.
 2. Postavljaju se `POWER_FAIL` i `DEGRADED_MODE`.
 3. Objavljuju se sistemski događaji.
@@ -88,6 +94,10 @@ Svaki zapis sadrži:
 - CRC.
 
 Log se može čitati preko USB fabričkog protokola ili lokalnog servisnog API-ja.
+
+## Tok podataka
+
+![Tok podataka kroz firmware](../slike/firmware/tok-podataka.png)
 
 ## Tamper putanja
 

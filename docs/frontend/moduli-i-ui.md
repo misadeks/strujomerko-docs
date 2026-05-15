@@ -110,6 +110,21 @@ src/components/meter-platform/entity-detail-page.tsx
 
 Ona renderuje više tipova entiteta preko `kind`: customer, contract, point, meter, device, tariff, schedule, period i bill.
 
+### Slike admin panela
+
+![Admin overview](../slike/admin-portal-UI/overview.png)
+![Svi korisnici](../slike/admin-portal-UI/svi-korisnici.png)
+![Prikaz korisnika](../slike/admin-portal-UI/prikaz-korisnika.png)
+![Ugovori](../slike/admin-portal-UI/ugovori.png)
+![Svi uređaji](../slike/admin-portal-UI/svi-uredjaji.png)
+![Prikaz uređaja](../slike/admin-portal-UI/prikaz-uredjaja.png)
+![Događaji i greške](../slike/admin-portal-UI/error-dogadjaji.png)
+![Tiketi održavanja](../slike/admin-portal-UI/tiketi-odrzavanja.png)
+![Sve tarife](../slike/admin-portal-UI/sve-tarife.png)
+![Prikaz tarife - osnovni podaci](../slike/admin-portal-UI/prikaz-tarife-1.png)
+![Prikaz tarife - detalji](../slike/admin-portal-UI/prikaz-tarife-2.png)
+![Računi](../slike/admin-portal-UI/racuni.png)
+
 ## Customer portal
 
 Glavna komponenta:
@@ -150,6 +165,19 @@ Password change u `PortalLayout`:
 3. Patch-uje customer account sa novom lozinkom.
 4. Ponovo radi login sa novom lozinkom.
 5. Zatvara dialog i prikazuje toast.
+
+### Slike korisničkog portala
+
+![Početni prikaz portala](../slike/user-portal-UI/pocetni-prikaz.png)
+![Svi ugovori](../slike/user-portal-UI/svi-ugovori.png)
+![Prikaz ugovora](../slike/user-portal-UI/prikaz-ugovora.png)
+![Svi uređaji korisnika](../slike/user-portal-UI/svi-uredjaji.png)
+![Prikaz uređaja korisnika](../slike/user-portal-UI/prikaz-uredjaja.png)
+![Potrošnja - pregled](../slike/user-portal-UI/potrosnja-1.png)
+![Potrošnja - detalji](../slike/user-portal-UI/potrosnja-2.png)
+![Svi računi](../slike/user-portal-UI/svi-racuni.png)
+![Prikaz računa - osnovno](../slike/user-portal-UI/prikaz-racuna-1.png)
+![Prikaz računa - detalji](../slike/user-portal-UI/prikaz-racuna-2.png)
 
 ## Field technician interfejs
 
@@ -335,14 +363,3 @@ Ovaj sloj je koristan za demo/mock razvoj, starije ekrane i reference za UI obra
 - nove tipove dodavati uz meter domen,
 - nove API metode dodavati u `meter-client.ts`.
 
-## Mesto za slike
-
-Ovde dodati:
-
-```markdown
-![Frontend UI sistem](../slike/frontend-ui-sistem.png)
-![Admin panel](../slike/frontend-admin-panel.png)
-![Customer portal](../slike/frontend-customer-portal.png)
-![Field technician interfejs](../slike/frontend-field-technician.png)
-![Frontend mape](../slike/frontend-mape.png)
-```

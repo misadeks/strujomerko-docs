@@ -93,11 +93,3 @@ Za brz prikaz u portalu backend treba da računa agregirane podatke:
 - broj i tipovi događaja.
 
 Agregirani podaci se mogu računati background worker-om nakon upisa telemetrije.
-
-## Mesto za slike
-
-Ovde dodati tok telemetrije:
-
-```markdown
-![Tok telemetrije](../slike/tok-telemetrije.png)
-```

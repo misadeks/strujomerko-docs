@@ -65,18 +65,3 @@ Minimalna MVP arhitektura može biti jedan backend servis sa jasno odvojenim mod
 - object storage za izveštaje ako bude potreban.
 
 Kasnije se podsistemi mogu izdvojiti u odvojene servise ako opterećenje ili timska organizacija to zahtevaju.
-
-## Mesto za slike
-
-Ovde dodati:
-
-- dijagram backend arhitekture,
-- dijagram toka telemetrije,
-- dijagram provisioning procesa,
-- dijagram obračunskog toka.
-
-Slike staviti u `docs/slike/`, na primer:
-
-```markdown
-![Backend arhitektura](../slike/backend-arhitektura.png)
-```

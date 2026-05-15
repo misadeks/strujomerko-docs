@@ -137,11 +137,3 @@ Svaka greška treba da ima stabilan format:
   }
 }
 ```
-
-## Mesto za slike
-
-Ovde dodati dijagram API grupa:
-
-```markdown
-![Backend API grupe](../slike/backend-api-grupe.png)
-```

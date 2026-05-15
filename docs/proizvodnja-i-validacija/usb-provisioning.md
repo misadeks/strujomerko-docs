@@ -48,6 +48,30 @@ python tools/factory_tool.py verify --port COM3 --out factory/reports/MTR-0001.j
 
 Proizvodni web interfejs na računaru ne treba direktno da pristupa USB-u iz browser-a. Lokalni backend proces, na primer FastAPI, treba da poseduje COM port, šalje `@SMF:` komande i preko WebSocket-a prosleđuje podatke browser-u.
 
+### Slike proizvodnog portala
+
+![Proizvodni dashboard](../slike/factory-portal-UI/dashbpard.jpeg)
+![Podaci uživo](../slike/factory-portal-UI/podaci-uzivo.jpeg)
+![Konzola uređaja](../slike/factory-portal-UI/konzola-uredjaja.jpeg)
+![Globalna konfiguracija](../slike/factory-portal-UI/global-konfiguracija.jpeg)
+![Fleet konfiguracija 1](../slike/factory-portal-UI/fleet-konfiguracija-1.jpeg)
+![Fleet konfiguracija 2](../slike/factory-portal-UI/fleet-konfiguracija-2.jpeg)
+![Fleet konfiguracija 3](../slike/factory-portal-UI/fleet-konfiguracija-3.jpeg)
+![Fleet konfiguracija 4](../slike/factory-portal-UI/fleet-konfiguracija-4.jpeg)
+![Podešavanje uređaja 1](../slike/factory-portal-UI/podesavanje-uredjaja.jpeg)
+![Podešavanje uređaja 2](../slike/factory-portal-UI/podesavanje-uredjaja-2.jpeg)
+![Podešavanje uređaja 3](../slike/factory-portal-UI/podesavanje-uredjaja-3.jpeg)
+![Podešavanje uređaja 4](../slike/factory-portal-UI/podesavanje-uredjaja-4.jpeg)
+![Provisioning](../slike/factory-portal-UI/provisioning.jpeg)
+![Provisioning detalji](../slike/factory-portal-UI/provisioning-2.jpeg)
+![Kalibracija vodič 1](../slike/factory-portal-UI/kalibracija-vodic-1.jpeg)
+![Kalibracija vodič 2](../slike/factory-portal-UI/kalibracija-vodic-2.jpeg)
+![Napredna kalibracija](../slike/factory-portal-UI/napredna-kalibracija.jpeg)
+![PL konstanta](../slike/factory-portal-UI/pl-konstanta.jpeg)
+![Logovi merenja](../slike/factory-portal-UI/logovi-merenja.jpeg)
+![Istorija akcija](../slike/factory-portal-UI/istorija-akcija.jpeg)
+![Izveštaji](../slike/factory-portal-UI/izvestaji.jpeg)
+
 ## Zaključavanje i bezbednost
 
 Nakon uspešnog provisioninga i kalibracije, uređaj može biti označen kao proizvodno zaključen. Komande koje brišu provisioning, menjaju kalibraciju ili resetuju backend stanje treba zaštititi servisnom autentifikacijom i jasnim audit tragom.

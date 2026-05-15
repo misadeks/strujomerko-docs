@@ -20,6 +20,7 @@ nav:
       - Arhitektura firmware-a: softver/arhitektura-firmware-a.md
       - Lokalni servisni API: softver/lokalni-servisni-api.md
       - Skladištenje i NVS: softver/skladistenje-i-nvs.md
+      - Matter integracija: softver/matter-integracija.md
   - Backend:
       - Pregled backend-a: backend/pregled-backenda.md
       - Podsistemi: backend/podsistemi.md

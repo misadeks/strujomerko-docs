@@ -28,12 +28,6 @@ Kako treba da se odradi:
 4. Uvesti kalibracioni postupak.
 5. Validirati očitavanja referentnim instrumentom.
 
-Mesto za sliku:
-
-```markdown
-![Merni hardverski podsistem](../slike/merni-hardverski-podsistem.png)
-```
-
 ## 2. Firmware podsistem
 
 Namena:
@@ -66,12 +60,6 @@ Kako treba da se odradi:
 5. Izložiti dijagnostiku kroz servisni API.
 6. Dodati testove za kritične tokove.
 
-Mesto za sliku:
-
-```markdown
-![Firmware podsistem](../slike/firmware-podsistem.png)
-```
-
 ## 3. Lokalni korisnički podsistem
 
 Namena:
@@ -97,12 +85,6 @@ Kako treba da se odradi:
 4. Povezati UI sa mernim snapshot-om i statusnim događajima.
 5. Proveriti čitljivost i ponašanje pri greškama.
 
-Mesto za sliku:
-
-```markdown
-![Lokalni korisnički podsistem](../slike/lokalni-ui-podsistem.png)
-```
-
 ## 4. Servisni podsistem uređaja
 
 Namena:
@@ -127,12 +109,6 @@ Kako treba da se odradi:
 3. Omogućiti pregled merenja i statusa.
 4. Omogućiti kalibraciju i proveru NVS-a.
 5. Obezbediti jasan model grešaka.
-
-Mesto za sliku:
-
-```markdown
-![Servisni podsistem uređaja](../slike/servisni-podsistem-uredjaja.png)
-```
 
 ## 5. Komunikacioni podsistem
 
@@ -160,12 +136,6 @@ Kako treba da se odradi:
 4. Implementirati offline buffer.
 5. Potvrditi slanje telemetrije u realnim mrežnim uslovima.
 
-Mesto za sliku:
-
-```markdown
-![Komunikacioni podsistem](../slike/komunikacioni-podsistem.png)
-```
-
 ## 6. Backend podsistem
 
 Namena:
@@ -190,12 +160,6 @@ Kako treba da se odradi:
 5. Implementirati tarife i verifikaciju.
 6. Implementirati obračun.
 7. Dodati admin i korisnički portal.
-
-Mesto za sliku:
-
-```markdown
-![Backend podsistem](../slike/backend-podsistem.png)
-```
 
 ## 7. Proizvodni podsistem
 
@@ -223,12 +187,6 @@ Kako treba da se odradi:
 4. Generisati fabrički izveštaj.
 5. Definisati politiku proizvodnog zaključavanja.
 
-Mesto za sliku:
-
-```markdown
-![Proizvodni podsistem](../slike/proizvodni-podsistem.png)
-```
-
 ## 8. Obračunski podsistem
 
 Namena:
@@ -247,9 +205,3 @@ Kako treba da se odradi:
 3. Verifikovati uređajem prijavljene tarife.
 4. Izračunati potrošnju po tarifnim opsezima.
 5. Generisati račun i stavke računa.
-
-Mesto za sliku:
-
-```markdown
-![Obračunski podsistem](../slike/obracunski-podsistem.png)
-```

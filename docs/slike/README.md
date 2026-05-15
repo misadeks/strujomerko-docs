@@ -1,49 +1,88 @@
 # Slike i dijagrami
 
-Ovaj folder je predviđen za slike, dijagrame, šeme i screenshot-ove koji će se koristiti u dokumentaciji.
+Ovaj odeljak je katalog slika koje su uključene u dokumentaciju. Slike su grupisane po delu sistema i koriste se direktno u odgovarajućim dokumentima.
 
-## Predložene slike
+## Hardver
 
-| Fajl | Gde se koristi |
-| --- | --- |
-| **Admin panel UI** | **Prikaz funkcionalnosti iz admin panela** |
-| [overview.png](http://github.com/misadeks/strujomerko-docs/tree/docs_pictures/docs/slike/admin-portal-UI/overview.png) | Opšti pregled administratorskog portala. |
-| [svi-korisnici.png](http://github.com/misadeks/strujomerko-docs/tree/docs_pictures/docs/slike/admin-portal-UI/svi-korisnici.png) | Pregled svih korisnika u sistemu. |
-| [prikaz-korisnika.png](http://github.com/misadeks/strujomerko-docs/tree/docs_pictures/docs/slike/admin-portal-UI/prikaz-korisnika.png) | Detaljan prikaz pojedinačnog korisnika. |
-| [svi-uredjaji.png](http://github.com/misadeks/strujomerko-docs/tree/docs_pictures/docs/slike/admin-portal-UI/svi-uredjaji.png) | Pregled svih registrovanih uređaja. |
-| [prikaz-uredjaja.png](http://github.com/misadeks/strujomerko-docs/tree/docs_pictures/docs/slike/admin-portal-UI/prikaz-uredjaja.png) | Detaljan prikaz uređaja i njegovih podataka. |
-| [sve-tarife.png](http://github.com/misadeks/strujomerko-docs/tree/docs_pictures/docs/slike/admin-portal-UI/sve-tarife.png) | Pregled svih tarifa u sistemu. |
-| [prikaz-tarife-1.png](http://github.com/misadeks/strujomerko-docs/tree/docs_pictures/docs/slike/admin-portal-UI/prikaz-tarife-1.png) | Prikaz detalja tarife i osnovnih parametara. |
-| [prikaz-tarife-2.png](http://github.com/misadeks/strujomerko-docs/tree/docs_pictures/docs/slike/admin-portal-UI/prikaz-tarife-2.png) | Napredni prikaz konfiguracije tarife. |
-| [racuni.png](http://github.com/misadeks/strujomerko-docs/tree/docs_pictures/docs/slike/admin-portal-UI/racuni.png) | Pregled računa i obračuna korisnika. |
-| [ugovori.png](http://github.com/misadeks/strujomerko-docs/tree/docs_pictures/docs/slike/admin-portal-UI/ugovori.png) | Upravljanje korisničkim ugovorima. |
-| [tiketi-odrzavanja.png](http://github.com/misadeks/strujomerko-docs/tree/docs_pictures/docs/slike/admin-portal-UI/tiketi-odrzavanja.png) | Pregled tiketa održavanja i servisnih zahteva. |
-| [error-dogadjaji.png](http://github.com/misadeks/strujomerko-docs/tree/docs_pictures/docs/slike/admin-portal-UI/error-dogadjaji.png) | Evidencija grešaka i događaja sistema. |
-| **Matter integracija uređaja** | **Sledeći koraci prikazuju kompletan proces povezivanja i konfiguracije uređaja unutar Matter ekosistema kroz mobilnu ili administratorsku aplikaciju.** |
-| [1.jpeg](https://github.com/misadeks/strujomerko-docs/tree/docs_pictures/docs/slike/matter-integracija/1.jpeg) | Pokretanje procesa Matter integracije i inicijalni pregled uređaja. |
-| [2.jpeg](https://github.com/misadeks/strujomerko-docs/tree/docs_pictures/docs/slike/matter-integracija/2.jpeg) | Izbor opcije za dodavanje novog Matter uređaja. |
-| [3.jpeg](https://github.com/misadeks/strujomerko-docs/tree/docs_pictures/docs/slike/matter-integracija/3.jpeg) | Pretraga dostupnih Matter uređaja u mreži. |
-| [4.jpeg](https://github.com/misadeks/strujomerko-docs/tree/docs_pictures/docs/slike/matter-integracija/4.jpeg) | Povezivanje aplikacije sa Matter uređajem. |
-| [5.jpeg](https://github.com/misadeks/strujomerko-docs/tree/docs_pictures/docs/slike/matter-integracija/5.jpeg) | Verifikacija i potvrda identiteta uređaja. |
-| [6.jpeg](https://github.com/misadeks/strujomerko-docs/tree/docs_pictures/docs/slike/matter-integracija/6.jpeg) | Konfiguracija osnovnih parametara uređaja. |
-| [7.jpeg](https://github.com/misadeks/strujomerko-docs/tree/docs_pictures/docs/slike/matter-integracija/7.jpeg) | Dodavanje uređaja u postojeću Matter mrežu. |
-| [8.jpeg](https://github.com/misadeks/strujomerko-docs/tree/docs_pictures/docs/slike/matter-integracija/8.jpeg) | Podešavanje prostorije ili grupe uređaja. |
-| [9.jpeg](https://github.com/misadeks/strujomerko-docs/tree/docs_pictures/docs/slike/matter-integracija/9.jpeg) | Sinhronizacija konfiguracije sa Matter ekosistemom. |
-| [10.jpeg](https://github.com/misadeks/strujomerko-docs/tree/docs_pictures/docs/slike/matter-integracija/10.jpeg) | Završetak procesa integracije uređaja. |
-| [11.jpeg](https://github.com/misadeks/strujomerko-docs/tree/docs_pictures/docs/slike/matter-integracija/11.jpeg) | Pregled uspešno povezanog Matter uređaja. |
-| [12.jpeg](https://github.com/misadeks/strujomerko-docs/tree/docs_pictures/docs/slike/matter-integracija/12.jpeg) | Test komunikacije i statusa uređaja. |
-| [13.jpeg](https://github.com/misadeks/strujomerko-docs/tree/docs_pictures/docs/slike/matter-integracija/13.jpeg) | Finalni prikaz integrisanog uređaja u sistemu. |
+- [Power-loss rezerva i superkondenzator](hardver/hardver-01.png)
+- [LCD ekran](hardver/hardver-02.png)
+- [RTC kolo](hardver/hardver-03.png)
+- [Ulazni filter za merenje struje](hardver/hardver-04.png)
+- [Merenje napona](hardver/hardver-05.png)
+- [Diferencijalni strujni signal - detalj 2](hardver/hardver-06.png)
+- [Diferencijalni strujni signal - detalj 1](hardver/hardver-07.png)
 
-## Kako linkovati sliku
+## Firmware
 
-Iz dokumenta koji je u podfolderu, na primer `docs/backend/pregled-backenda.md`:
+- [Firmware pregled](firmware/firmware.jpeg)
+- [Firmware stack dijagram](firmware/firmware-stack-diagram.png)
+- [Otpornost na greške i power-fail tok](firmware/fault-tolerance.png)
+- [Tok podataka kroz firmware](firmware/tok-podataka.png)
 
-```markdown
-![Backend arhitektura](../slike/backend-arhitektura.png)
-```
+## Admin portal
 
-Iz početne strane `docs/index.md`:
+- [Admin overview](admin-portal-UI/overview.png)
+- [Svi korisnici](admin-portal-UI/svi-korisnici.png)
+- [Prikaz korisnika](admin-portal-UI/prikaz-korisnika.png)
+- [Ugovori](admin-portal-UI/ugovori.png)
+- [Svi uređaji](admin-portal-UI/svi-uredjaji.png)
+- [Prikaz uređaja](admin-portal-UI/prikaz-uredjaja.png)
+- [Događaji i greške](admin-portal-UI/error-dogadjaji.png)
+- [Tiketi održavanja](admin-portal-UI/tiketi-odrzavanja.png)
+- [Sve tarife](admin-portal-UI/sve-tarife.png)
+- [Prikaz tarife - osnovni podaci](admin-portal-UI/prikaz-tarife-1.png)
+- [Prikaz tarife - detalji](admin-portal-UI/prikaz-tarife-2.png)
+- [Računi](admin-portal-UI/racuni.png)
 
-```markdown
-![Arhitektura sistema](slike/sistem-arhitektura.png)
-```
+## Korisnički portal
+
+- [Početni prikaz portala](user-portal-UI/pocetni-prikaz.png)
+- [Svi ugovori](user-portal-UI/svi-ugovori.png)
+- [Prikaz ugovora](user-portal-UI/prikaz-ugovora.png)
+- [Svi uređaji korisnika](user-portal-UI/svi-uredjaji.png)
+- [Prikaz uređaja korisnika](user-portal-UI/prikaz-uredjaja.png)
+- [Potrošnja - pregled](user-portal-UI/potrosnja-1.png)
+- [Potrošnja - detalji](user-portal-UI/potrosnja-2.png)
+- [Svi računi](user-portal-UI/svi-racuni.png)
+- [Prikaz računa - osnovno](user-portal-UI/prikaz-racuna-1.png)
+- [Prikaz računa - detalji](user-portal-UI/prikaz-racuna-2.png)
+
+## Proizvodni portal
+
+- [Proizvodni dashboard](factory-portal-UI/dashbpard.jpeg)
+- [Podaci uživo](factory-portal-UI/podaci-uzivo.jpeg)
+- [Konzola uređaja](factory-portal-UI/konzola-uredjaja.jpeg)
+- [Globalna konfiguracija](factory-portal-UI/global-konfiguracija.jpeg)
+- [Fleet konfiguracija 1](factory-portal-UI/fleet-konfiguracija-1.jpeg)
+- [Fleet konfiguracija 2](factory-portal-UI/fleet-konfiguracija-2.jpeg)
+- [Fleet konfiguracija 3](factory-portal-UI/fleet-konfiguracija-3.jpeg)
+- [Fleet konfiguracija 4](factory-portal-UI/fleet-konfiguracija-4.jpeg)
+- [Podešavanje uređaja 1](factory-portal-UI/podesavanje-uredjaja.jpeg)
+- [Podešavanje uređaja 2](factory-portal-UI/podesavanje-uredjaja-2.jpeg)
+- [Podešavanje uređaja 3](factory-portal-UI/podesavanje-uredjaja-3.jpeg)
+- [Podešavanje uređaja 4](factory-portal-UI/podesavanje-uredjaja-4.jpeg)
+- [Provisioning](factory-portal-UI/provisioning.jpeg)
+- [Provisioning detalji](factory-portal-UI/provisioning-2.jpeg)
+- [Kalibracija vodič 1](factory-portal-UI/kalibracija-vodic-1.jpeg)
+- [Kalibracija vodič 2](factory-portal-UI/kalibracija-vodic-2.jpeg)
+- [Napredna kalibracija](factory-portal-UI/napredna-kalibracija.jpeg)
+- [PL konstanta](factory-portal-UI/pl-konstanta.jpeg)
+- [Logovi merenja](factory-portal-UI/logovi-merenja.jpeg)
+- [Istorija akcija](factory-portal-UI/istorija-akcija.jpeg)
+- [Izveštaji](factory-portal-UI/izvestaji.jpeg)
+
+## Matter integracija
+
+- [Matter integracija 1](matter-integracija/1.jpeg)
+- [Matter integracija 2](matter-integracija/2.jpeg)
+- [Matter integracija 3](matter-integracija/3.jpeg)
+- [Matter integracija 4](matter-integracija/4.jpeg)
+- [Matter integracija 5](matter-integracija/5.jpeg)
+- [Matter integracija 6](matter-integracija/6.jpeg)
+- [Matter integracija 7](matter-integracija/7.jpeg)
+- [Matter integracija 8](matter-integracija/8.jpeg)
+- [Matter integracija 9](matter-integracija/9.jpeg)
+- [Matter integracija 10](matter-integracija/10.jpeg)
+- [Matter integracija 11](matter-integracija/11.jpeg)
+- [Matter integracija 12](matter-integracija/12.jpeg)
+- [Matter integracija 13](matter-integracija/13.jpeg)
