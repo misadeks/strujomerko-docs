@@ -6,32 +6,33 @@ Ovaj folder je predviđen za slike, dijagrame, šeme i screenshot-ove koji će s
 
 | Fajl | Gde se koristi |
 | --- | --- |
-| `sistem-arhitektura.png` | Opšti pregled sistema. |
-| `merni-hardverski-podsistem.png` | Merni hardverski podsistem. |
-| `firmware-podsistem.png` | Firmware podsistem. |
-| `lokalni-ui-podsistem.png` | Lokalni korisnički podsistem. |
-| `servisni-podsistem-uredjaja.png` | Servisni režim uređaja. |
-| `komunikacioni-podsistem.png` | GSM/GPRS uplink. |
-| `backend-arhitektura.png` | Backend arhitektura. |
-| `backend-podsistemi.png` | Backend podsistemi. |
-| `backend-api-grupe.png` | Backend API grupe. |
-| `backend-modeli-podataka.png` | Modeli podataka. |
-| `tok-telemetrije.png` | Tok telemetrije. |
-| `tarife-i-obracun.png` | Tarifni i obračunski tok. |
-| `plan-implementacije-backenda.png` | Plan implementacije backend-a. |
-| `proizvodni-podsistem.png` | Proizvodni provisioning i kalibracija. |
-| `frontend-pregled.png` | Pregled frontend aplikacije. |
-| `frontend-rute.png` | Frontend rute i layout-i. |
-| `frontend-auth-tok.png` | Login i role-based redirect tok. |
-| `frontend-api-slojevi.png` | Novi meter API i legacy/mock API sloj. |
-| `frontend-cache-realtime.png` | Cache, polling i realtime tok. |
-| `frontend-ui-sistem.png` | UI sistem i komponente. |
-| `frontend-admin-panel.png` | Admin dashboard. |
-| `frontend-customer-portal.png` | Customer portal. |
-| `frontend-field-technician.png` | Field technician interfejs. |
-| `frontend-mape.png` | Mape i geolokacija. |
-| `frontend-razvojni-tok.png` | Razvojni workflow. |
-| `frontend-deployment.png` | Deployment tok frontend aplikacije. |
+| **Admin panel UI** | **Prikaz funkcionalnosti iz admin panela** |
+| [overview.png](http://github.com/misadeks/strujomerko-docs/tree/docs_pictures/docs/slike/admin-portal-UI/overview.png) | Opšti pregled administratorskog portala. |
+| [svi-korisnici.png](http://github.com/misadeks/strujomerko-docs/tree/docs_pictures/docs/slike/admin-portal-UI/svi-korisnici.png) | Pregled svih korisnika u sistemu. |
+| [prikaz-korisnika.png](http://github.com/misadeks/strujomerko-docs/tree/docs_pictures/docs/slike/admin-portal-UI/prikaz-korisnika.png) | Detaljan prikaz pojedinačnog korisnika. |
+| [svi-uredjaji.png](http://github.com/misadeks/strujomerko-docs/tree/docs_pictures/docs/slike/admin-portal-UI/svi-uredjaji.png) | Pregled svih registrovanih uređaja. |
+| [prikaz-uredjaja.png](http://github.com/misadeks/strujomerko-docs/tree/docs_pictures/docs/slike/admin-portal-UI/prikaz-uredjaja.png) | Detaljan prikaz uređaja i njegovih podataka. |
+| [sve-tarife.png](http://github.com/misadeks/strujomerko-docs/tree/docs_pictures/docs/slike/admin-portal-UI/sve-tarife.png) | Pregled svih tarifa u sistemu. |
+| [prikaz-tarife-1.png](http://github.com/misadeks/strujomerko-docs/tree/docs_pictures/docs/slike/admin-portal-UI/prikaz-tarife-1.png) | Prikaz detalja tarife i osnovnih parametara. |
+| [prikaz-tarife-2.png](http://github.com/misadeks/strujomerko-docs/tree/docs_pictures/docs/slike/admin-portal-UI/prikaz-tarife-2.png) | Napredni prikaz konfiguracije tarife. |
+| [racuni.png](http://github.com/misadeks/strujomerko-docs/tree/docs_pictures/docs/slike/admin-portal-UI/racuni.png) | Pregled računa i obračuna korisnika. |
+| [ugovori.png](http://github.com/misadeks/strujomerko-docs/tree/docs_pictures/docs/slike/admin-portal-UI/ugovori.png) | Upravljanje korisničkim ugovorima. |
+| [tiketi-odrzavanja.png](http://github.com/misadeks/strujomerko-docs/tree/docs_pictures/docs/slike/admin-portal-UI/tiketi-odrzavanja.png) | Pregled tiketa održavanja i servisnih zahteva. |
+| [error-dogadjaji.png](http://github.com/misadeks/strujomerko-docs/tree/docs_pictures/docs/slike/admin-portal-UI/error-dogadjaji.png) | Evidencija grešaka i događaja sistema. |
+| **Matter integracija uređaja** | **Sledeći koraci prikazuju kompletan proces povezivanja i konfiguracije uređaja unutar Matter ekosistema kroz mobilnu ili administratorsku aplikaciju.** |
+| [1.jpeg](https://github.com/misadeks/strujomerko-docs/tree/docs_pictures/docs/slike/matter-integracija/1.jpeg) | Pokretanje procesa Matter integracije i inicijalni pregled uređaja. |
+| [2.jpeg](https://github.com/misadeks/strujomerko-docs/tree/docs_pictures/docs/slike/matter-integracija/2.jpeg) | Izbor opcije za dodavanje novog Matter uređaja. |
+| [3.jpeg](https://github.com/misadeks/strujomerko-docs/tree/docs_pictures/docs/slike/matter-integracija/3.jpeg) | Pretraga dostupnih Matter uređaja u mreži. |
+| [4.jpeg](https://github.com/misadeks/strujomerko-docs/tree/docs_pictures/docs/slike/matter-integracija/4.jpeg) | Povezivanje aplikacije sa Matter uređajem. |
+| [5.jpeg](https://github.com/misadeks/strujomerko-docs/tree/docs_pictures/docs/slike/matter-integracija/5.jpeg) | Verifikacija i potvrda identiteta uređaja. |
+| [6.jpeg](https://github.com/misadeks/strujomerko-docs/tree/docs_pictures/docs/slike/matter-integracija/6.jpeg) | Konfiguracija osnovnih parametara uređaja. |
+| [7.jpeg](https://github.com/misadeks/strujomerko-docs/tree/docs_pictures/docs/slike/matter-integracija/7.jpeg) | Dodavanje uređaja u postojeću Matter mrežu. |
+| [8.jpeg](https://github.com/misadeks/strujomerko-docs/tree/docs_pictures/docs/slike/matter-integracija/8.jpeg) | Podešavanje prostorije ili grupe uređaja. |
+| [9.jpeg](https://github.com/misadeks/strujomerko-docs/tree/docs_pictures/docs/slike/matter-integracija/9.jpeg) | Sinhronizacija konfiguracije sa Matter ekosistemom. |
+| [10.jpeg](https://github.com/misadeks/strujomerko-docs/tree/docs_pictures/docs/slike/matter-integracija/10.jpeg) | Završetak procesa integracije uređaja. |
+| [11.jpeg](https://github.com/misadeks/strujomerko-docs/tree/docs_pictures/docs/slike/matter-integracija/11.jpeg) | Pregled uspešno povezanog Matter uređaja. |
+| [12.jpeg](https://github.com/misadeks/strujomerko-docs/tree/docs_pictures/docs/slike/matter-integracija/12.jpeg) | Test komunikacije i statusa uređaja. |
+| [13.jpeg](https://github.com/misadeks/strujomerko-docs/tree/docs_pictures/docs/slike/matter-integracija/13.jpeg) | Finalni prikaz integrisanog uređaja u sistemu. |
 
 ## Kako linkovati sliku
 
