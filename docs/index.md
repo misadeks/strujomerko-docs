@@ -36,18 +36,3 @@ Svi tekstualni dokumenti u ovoj strukturi su na srpskom. Tehnički identifikator
 - [EKS Frontend](https://github.com/misadeks/eks-frontend)
 - [Strujomerko Embedded](https://github.com/misadeks/strujomerko-embedded)
 
-## Slike
-
-Slike, šeme, dijagrami i screenshot-ovi treba da idu u `docs/slike/`. U dokumentima su već ostavljena mesta za dijagrame backend arhitekture, podsistema, API grupa, modela podataka, telemetrije, obračuna i plana implementacije.
-
-Primer linkovanja slike iz Markdown dokumenta:
-
-```markdown
-![Opis slike](../slike/naziv-slike.png)
-```
-
-Ako je slika u istom folderu kao dokument, koristi odgovarajuću relativnu putanju.
-
-## Napomena o statusu
-
-Ova dokumentacija je napravljena iz postojećih fajlova iz foldera `old docs/`. Pre objave kao zvanične release dokumentacije treba proveriti da li su API, pinout, kalibracioni tok i nalazi verifikacije usklađeni sa najnovijim firmware repozitorijumom.
